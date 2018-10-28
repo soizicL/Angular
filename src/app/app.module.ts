@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
+import { FilmsComponent } from './films/films.component';
+import { HighLightDirective } from './high-light.directive';
+import { ShowMoviesDirective } from './show-movies.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     UserProfileComponent,
-    MenuComponent
+    MenuComponent,
+    FilmsComponent,
+    HighLightDirective,
+    ShowMoviesDirective
   ],
   imports: [
     BrowserModule,
@@ -23,6 +29,7 @@ import { MenuComponent } from './menu/menu.component';
         
         { path: "SignUp", component: SignUpComponent, pathMatch: "full"}, 
         { path: "UserProfile", component: UserProfileComponent, pathMatch: "full"},
+        { path: "Films", component: FilmsComponent, pathMatch: "full"},
         { path: "", redirectTo: "Menu", pathMatch: "full"}
   ],
 

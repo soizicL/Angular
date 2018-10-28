@@ -9,6 +9,7 @@ export class MenuComponent implements OnInit {
  
   menuSignup:string ='Sign-Up';
   menuUserProfile:string ='User Profile';
+  menuFilms:string = 'Films';
 
   constructor() { }
 
